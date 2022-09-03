@@ -238,28 +238,30 @@
             Latest news <span class="ampersand">&</span> New updates
           </h2>
           <p class="description-name">Latest News</p>
+          <form class="email-form latest-news__form" action="#">
+            <input
+              class="email-form__input-email"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            /><button class="email-form__submit" type="submit">
+              Subscribe
+            </button>
+            <br />
+            <input
+              class="email-form__agree-button"
+              id="agree"
+              type="checkbox"
+              name="agree"
+              required
+            />
+            <label class="email-form__agree-text" for="agree"
+              >Sign up for our newsletter</label
+            >
+          </form>
         </div>
-        <form class="email-form latest-news__form" action="#">
-          <input
-            class="email-form__input-email"
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          /><button class="email-form__submit" type="submit">Subscribe</button>
-          <br />
-          <input
-            class="email-form__agree-button"
-            id="agree"
-            type="checkbox"
-            name="agree"
-            required
-          />
-          <label class="email-form__agree-text" for="agree"
-            >Sign up for our newsletter</label
-          >
-        </form>
       </section>
 
       <section class="contacs">
