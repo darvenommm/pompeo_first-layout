@@ -3,6 +3,7 @@
   /* colors */
   --gray: #6c6c6c;
   --light-gray: #ebebeb;
+  --gray-for-label: #a1a1a1;
   --red: #ac1313;
   --dark-red: #9a0f0f;
   --pink: #d77474;
@@ -10,6 +11,7 @@
   --dark-beige: #d8aa61;
   --orange: #f05b10;
   --dark-orange: #e4560f;
+  --purple: #8534ff;
 }
 
 /* main styles */
@@ -80,6 +82,13 @@ h3 {
   font-weight: bold;
 
   margin: 0;
+}
+
+input,
+label {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .logo {
@@ -640,4 +649,60 @@ h3 {
   color: var(--red);
 
   text-decoration: underline;
+}
+
+/* latest-news */
+.latest-news {
+  border: 1px solid var(--light-gray);
+}
+
+.latest-news__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latest-news__description-name {
+  margin-top: 242px;
+  margin-bottom: 20px;
+}
+
+.latest-news__title {
+  margin-bottom: 62px;
+}
+
+.email-form__input-email {
+  padding: 12px 10px;
+  padding-right: 150px;
+
+  border: 1px solid var(--light-gray);
+}
+
+.email-form__submit {
+  width: 175px;
+  height: 45px;
+
+  color: white;
+
+  background-color: black;
+
+  margin-bottom: 40px;
+
+  cursor: pointer;
+}
+
+.email-form__agree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 160px;
+}
+
+.email-form__agree-text {
+  position: relative;
+
+  margin-left: 10px;
+
+  color: var(--gray-for-label);
 }
