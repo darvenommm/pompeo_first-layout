@@ -4,7 +4,12 @@
   --gray: #6c6c6c;
   --light-gray: #ebebeb;
   --red: #ac1313;
+  --dark-red: #9a0f0f;
   --pink: #d77474;
+  --beige: #e4b366;
+  --dark-beige: #d8aa61;
+  --orange: #f05b10;
+  --dark-orange: #e4560f;
 }
 
 /* main styles */
@@ -23,6 +28,8 @@ body {
   font-weight: normal;
   line-height: 1.7em;
   color: var(--gray);
+
+  background-color: white;
 
   overflow-x: hidden;
 }
@@ -53,6 +60,22 @@ p {
 
 h1 {
   margin: 0;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.25em;
+  color: black;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 29px;
+  line-height: 1.24em;
+  font-weight: bold;
 }
 
 .logo {
@@ -244,4 +267,145 @@ h1 {
   line-height: 1.6em;
 
   margin-bottom: 50px;
+}
+
+/* categories */
+.categories__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.categories__title {
+  margin-bottom: 65px;
+}
+
+.categories__description-name {
+  margin-top: 120px;
+  margin-bottom: 40px;
+
+  order: -1;
+}
+
+.categories__icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-bottom: 80px;
+
+  width: 100%;
+}
+
+.categories__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 240px;
+  height: 240px;
+
+  margin-bottom: 10px;
+
+  border-radius: 50%;
+}
+
+.categories__vase-icon {
+  background-image: radial-gradient(
+    circle closest-side,
+    var(--beige) 75%,
+    var(--dark-beige) 75%
+  );
+}
+
+.categories__mug-icon {
+  background-image: radial-gradient(
+    circle closest-side,
+    var(--orange) 75%,
+    var(--dark-orange) 75%
+  );
+}
+
+.categories__plate-icon {
+  background-image: radial-gradient(
+    circle closest-side,
+    var(--red) 75%,
+    var(--dark-red) 75%
+  );
+}
+
+.categories__icon-text {
+  position: relative;
+  bottom: -40px;
+
+  font-family: "Poppins", sans-serif;
+  line-height: 2.7em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.categories__vase-text::before {
+  position: absolute;
+  top: -70px;
+  left: -10px;
+
+  width: 70px;
+  height: 70px;
+
+  background-image: url("../images/icons/vase.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.categories__mug-text::before {
+  position: absolute;
+  top: -70px;
+  left: -10px;
+
+  width: 70px;
+  height: 70px;
+
+  background-image: url("../images/icons/mug.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+.categories__plate-text::before {
+  position: absolute;
+  top: -70px;
+  left: -7px;
+
+  width: 70px;
+  height: 70px;
+
+  background-image: url("../images/icons/plate.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.categories__texts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  margin-bottom: 140px;
+}
+
+.categories__text {
+  max-width: 500px;
+}
+
+.categories__text-title {
+  margin-bottom: 25px;
+}
+
+.categories__text-description {
+  margin-bottom: 10px;
 }
