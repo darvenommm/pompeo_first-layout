@@ -68,6 +68,8 @@ h2 {
   font-size: 40px;
   line-height: 1.25em;
   color: black;
+
+  margin: 0;
 }
 
 h3 {
@@ -76,6 +78,8 @@ h3 {
   font-size: 29px;
   line-height: 1.24em;
   font-weight: bold;
+
+  margin: 0;
 }
 
 .logo {
@@ -509,4 +513,88 @@ h3 {
   font-weight: bold;
 
   margin-bottom: 50px;
+}
+
+/* collection */
+.collection {
+  position: relative;
+}
+
+.collection::before {
+  position: absolute;
+  left: 55px;
+  top: 672px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--light-gray);
+
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+
+  content: "Product Collections";
+}
+
+@media all and (max-width: 1300px) {
+  .collection::before {
+    display: none;
+  }
+}
+
+.collection__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 365px);
+  gap: 20px;
+
+  width: 100%;
+
+  margin-bottom: 60px;
+}
+
+.collection__product {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.collection__image {
+  width: 365;
+
+  margin-bottom: 20px;
+}
+
+.collection__product-name {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: normal;
+  color: var(--gray);
+
+  margin-bottom: 0;
+}
+
+.collection__product-price {
+  color: black;
+
+  margin-bottom: 15px;
+}
+
+.collection__description-name {
+  margin-top: 120px;
+  margin-bottom: 15px;
+}
+
+.collection__title {
+  margin-bottom: 60px;
+}
+
+.collection__button {
+  margin-bottom: 120px;
 }
