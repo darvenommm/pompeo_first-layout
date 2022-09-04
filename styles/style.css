@@ -294,6 +294,12 @@ h3 {
   content: "Hand Craft Pottery";
 }
 
+@media all and (max-width: 1300px) {
+  .categories::before {
+    display: none;
+  }
+}
+
 .categories__container {
   display: flex;
   flex-direction: column;
