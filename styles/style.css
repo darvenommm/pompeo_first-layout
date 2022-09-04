@@ -12,6 +12,7 @@
   --orange: #f05b10;
   --dark-orange: #e4560f;
   --purple: #8534ff;
+  --footer-color: #dbdbdb;
 }
 
 /* main styles */
@@ -721,6 +722,8 @@ label {
   flex-wrap: wrap;
 
   width: 100%;
+
+  margin-bottom: 80px;
 }
 
 .contacts__logo {
@@ -796,4 +799,22 @@ label {
   background-size: cover;
 
   content: "";
+}
+
+/* footer */
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  background-color: rgba(219, 219, 219, 0.1);
+}
+
+.footer__text {
+  font-size: 12px;
+  line-height: 1.83em;
+  text-align: center;
+}
+
+.footer__darker-text {
+  color: black;
 }
